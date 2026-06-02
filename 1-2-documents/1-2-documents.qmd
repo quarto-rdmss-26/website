@@ -397,18 +397,29 @@ csl: apa.csl
 Building a bibliography by hand is painful. Reference managers like [Zotero](https://www.zotero.org) (free, open-source) export `references.bib` for you.
 :::
 
+## Our turn
+
+::: task
+Open `citations.qmd` in RStudio. We will walk through Task 1 and Task 2 together:
+
+-   **Task 1**: add `@tilley2021my` as an in-text citation in the first sentence.
+-   **Task 2**: add `[@kalina2023rich]` as a parenthetical citation in the second sentence.
+-   Render and find the auto-generated reference list at the bottom of the document.
+:::
+
 ## Your turn
 
 ::: task
--   Open `citations.qmd` in RStudio.
--   Follow the two short tasks: add one in-text citation, add one parenthetical citation.
--   Render and observe the auto-generated reference list at the bottom of the document.
+Pick **one** stretch goal from `citations.qmd`:
+
+-   **Stretch 1**: add `csl: apa.csl` to the YAML header, re-render, and compare the formatting.
+-   **Stretch 2**: copy the rich scholarly YAML block into a new document and render.
 :::
 
 ```{r}
 #| echo: false
 
-countdown(minutes = 7)
+countdown(minutes = 5)
 ```
 
 # Code {background-color="#4C326A"}
