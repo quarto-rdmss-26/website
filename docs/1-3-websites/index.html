@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -304,16 +269,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="create-a-website" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-website">Create a website</h2>
 <p>Write up your About page using the Quarto file format.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The screenshots below are taken from a different course. The steps are exactly the same, but where the screenshots show another workspace or project name, use <code>quarto-rdmss-26</code> instead.</p>
+</div>
+</div>
 <ol type="1">
-<li><p>Open the “Content” page of the Posit Cloud workspace for the course: <a href="https://posit.cloud/spaces/785946/content/all?sort=name_asc" class="uri">https://posit.cloud/spaces/785946/content/all?sort=name_asc</a></p></li>
+<li><p>Open the “Content” page of the Posit Cloud workspace for the course: <a href="https://posit.cloud/spaces/785946/content/" class="uri">https://posit.cloud/spaces/785946/content/</a></p></li>
 <li><p>Click on “New Project” button to create a new project</p></li>
 </ol>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"images/01-website-new-project.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="images/01-website-new-project.png" class="img-fluid figure-img"></p>
+<p><img src="images/01-website-new-project.png" class="img-fluid figure-img" width="1195"></p>
 </figure>
 </div>
 </div>
@@ -322,11 +299,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Click on “New RStudio Project”</li>
 </ol>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"images/02-website-new-project-rstudio.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="images/02-website-new-project-rstudio.png" class="img-fluid figure-img"></p>
+<p><img src="images/02-website-new-project-rstudio.png" class="img-fluid figure-img" width="1195"></p>
 </figure>
 </div>
 </div>
@@ -335,66 +311,48 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>While the project deploys, rename it from “Untitled Project” to “website” by clicking on the “Untitled Project” text in the top-left corner of the RStudio window. You can also rename it after deployment has concluded.</li>
 </ol>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"images/03-website-rename.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="images/03-website-rename.png" class="img-fluid figure-img"></p>
+<p><img src="images/03-website-rename.png" class="img-fluid figure-img" width="582"></p>
 </figure>
 </div>
 </div>
 </div>
 <ol start="5" type="1">
-<li>Delete the <code>setup.qmd</code> from the Files in the bottom-right window.</li>
+<li>Create a Blank file using Quarto Document, name it <code>index.qmd</code> and save it in the root of the project.</li>
 </ol>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"images/04-website-delete-setup.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="images/04-website-delete-setup.png" class="img-fluid figure-img"></p>
+<p><img src="images/05-website-new-quarto-doc.png" class="img-fluid figure-img" width="582"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/06-website-name-index.png" class="img-fluid figure-img" width="582"></p>
 </figure>
 </div>
 </div>
 </div>
 <ol start="6" type="1">
-<li><p>Delete or update the <code>README.md</code> file in the Files in the bottom-right window.</p></li>
-<li><p>Create a Blank file using Quarto Document, name it <code>index.qmd</code> and save it in the root of the project.</p></li>
-</ol>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"images/05-website-new-quarto-doc.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="images/05-website-new-quarto-doc.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"images/06-website-name-index.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="images/06-website-name-index.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<ol start="8" type="1">
 <li>Open the <code>index.qmd</code> file and write up your page with guidance (e.g.&nbsp;copy/paste and replace) from <a href="https://quarto.org/docs/websites/website-about.html">Quarto documentation for About Pages</a></li>
 </ol>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"images/07-website-copy-about.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="images/07-website-copy-about.png" class="img-fluid figure-img"></p>
+<p><img src="images/07-website-copy-about.png" class="img-fluid figure-img" width="582"></p>
 </figure>
 </div>
 </div>
 </div>
-<ol start="9" type="1">
+<ol start="7" type="1">
 <li><p>Render the <code>index.qmd</code> file to see what your website will look like</p></li>
 <li><p>Keep updating the <code>index.qmd</code> until you are satisfied with the content and layout (e.g.&nbsp;try a different template, add your profile photo to the project folder, etc.)</p></li>
 </ol>
